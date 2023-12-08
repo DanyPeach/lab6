@@ -15,16 +15,17 @@ const expect = chai.expect;
   describe("Post", () => {
     it("Should create a new photo", async () => {
       new PhotoModel(photo)
-      console.log(await PhotoModel.find());
+       console.log(await PhotoModel.find());
   
-      const res = await chai
-        .request(app)
-        .post("/photo")
-        .send(photo);
+       const res = await chai
+         .request(app)
+         .post("/photo")
+         .send(photo);
   
       console.log("Response:", res.error);
       console.log("Body:", res.body);
-  
+      expect(1).equal(1);
+
       expect(res).to.have.status(201);
       expect(_.pick(res.body, paymentKeys)).to.deep.equal(photo);
     });

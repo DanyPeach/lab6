@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo hello"
+    "test": "mocha --timeout 100000 --reporter spec --exit"
   },
   "author": "",
   "license": "ISC",

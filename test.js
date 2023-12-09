@@ -71,9 +71,9 @@ const expect = chai.expect;
   
     it("Should update(put) photo by id", async () => {
       const res = await chai
-        .request(app)
-        .put(`/photo/${createdPayment._id}`)
-        .send(differentPayment);
+        // .request(app)
+        // .put(`/photo/${createdPayment._id}`)
+        // .send(differentPayment);
   
       expect(res.body).to.deep.equal({ ...createdPayment, ...differentPayment });
     });

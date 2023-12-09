@@ -7,9 +7,11 @@
     "start": "node index.js",
     "test": "mocha --timeout 100000 --reporter spec --exit"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "chai": "^4.3.10",
     "chai-http": "^4.4.0",
     "dotenv": "^16.3.1",

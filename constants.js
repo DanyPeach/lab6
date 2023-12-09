@@ -2,11 +2,11 @@ module.exports = {
     photo: {
       "username": "User1",
       "total_sum": 123456,
-      "payment_method": "Apple Pay"
+      "photo_method": "profile"
     },
     differentPayment: {
-      "username": "Userrr321",
+      "username": "User2",
       "total_sum": 65,
-      "payment_method": "Mastercard"
+      "photo_method": "photoset"
     }
   }

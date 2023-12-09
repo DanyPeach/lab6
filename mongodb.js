@@ -17,7 +17,7 @@ mongoose.connect("mongodb+srv://daniildudak2002:9e2U5QjbATh4o0PJ@cluster0.ibopec
   const Photo = new Schema({
     username: String,
     total_sum: Number,
-    payment_method: String
+    photo_method: String
   });
   
   const PhotoModel = model('Photo', Photo);

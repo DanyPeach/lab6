@@ -24,7 +24,6 @@ const expect = chai.expect;
   
       console.log("Response:", res.error);
       console.log("Body:", res.body);
-      expect(1).equal(1);
 
       expect(res).to.have.status(201);
       expect(_.pick(res.body, paymentKeys)).to.deep.equal(photo);

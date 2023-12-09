@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo 5 test are completed"
+    "test": "mocha --timeout 100000 --reporter spec --exit"
   },
   "author": "",
   "license": "ISC",
@@ -16,8 +16,14 @@
     "express": "^4.18.2",
     "loadsh": "^0.0.4",
     "lodash": "^4.17.21",
+    "mocha": "^10.2.0",
     "mongoose": "^7.5.1",
     "mongose": "^0.0.2-security",
     "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
   }
 }
